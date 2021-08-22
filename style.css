@@ -1,0 +1,105 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(90deg, #7f7fd5, #86a8e7, #91eae4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+}
+.header{
+    flex-direction: column;
+    background-image: linear-gradient(270deg, #7f7fd5, #86a8e7, #91eae4);
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.content{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.content input{
+    padding: 8px;
+}
+.btn{
+    background-image: linear-gradient(90deg, #7f7fd5, #86a8e7, #91eae4);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ALL .5S ease-in-out;
+    color: white;
+}
+.content button:hover{
+    transform: scale(0.9);
+    box-shadow: -1px 0px 3px 2px #3a3a3a;
+}
+.output{
+    padding: 0px 30px;
+}
+.cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    flex-wrap: nowrap;
+}
+ .btn-edit{
+    padding: 5px 8px;
+    background: #088408;
+    margin-right: 5px;
+}
+ .btn-delete{
+    padding: 5px 8px;
+    background: tomato;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.msg{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 30px;
+}
+.error{
+    background-color: rgb(224, 16, 16);
+}
+.suc{
+    background-color: rgb(3, 85, 3);
+}
+@media(max-width: 320px){
+    .content input{
+        padding: 4px;
+        width: 120px;
+    }
+}
+@media(max-width: 375px){
+    .container{
+        margin: 0px 30px;
+    }
+    input{
+        width: 140px;
+    }
+    .btn, .btn-add, .btn-delete{
+        padding: 5px 8px;
+    }
+}
